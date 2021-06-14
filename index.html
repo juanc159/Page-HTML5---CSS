@@ -5,28 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
     <title>Practica CSS</title>
 </head>
 <body>
 
+   
+    <div class="container"> 
+    
     <!-- header-->
-    <div class="container ">
         <header class="header">
             <div class="logo">
             <img src="image/logo.png" alt="" class="logo_img">
             </div>
-            <nav class="menu">
+            <a class="toogle" href="#"><i class="fas fa-bars"></i></a>
+            <nav class="menu"> 
                 <a class="menu_links" href="#">home</a>
                 <a class="menu_links" href="#">github</a>
                 <a class="menu_links" href="#">contact</a>
             </nav>
         </header>
         
-    </div>
     
-
     <!-- banner-->
-    <div class="container">
        <div class="banner">
            <div class="banner_caja">
                 <div class="subTitle">
@@ -39,11 +41,8 @@
            <img src="image/software.jpeg" alt="" class="banner_img">
            
        </div>
-    </div>
- 
     
     <!-- galery-->
-    <div class="container">
         <div class="galery">
             <div class="galery_title">Galery Images</div>
             <div class="galery_items">
@@ -105,12 +104,8 @@
                 </div>
             </div>
         </div>
-    </div>
-    
 
-    
     <!--contactanos-->
-    <div class="container">
         <div class="contact">
             <div class="caja_contact">
                 <div class="info_contact">
@@ -131,7 +126,65 @@
             </div>
             
         </div>
+
+    <!--footer-->
+        <div class="footer">
+            <div class="caja_footer">
+                <div class="caja_info">
+                    <p class="caja_title">Ready for a simple future?</p>
+                    <p class="caja_subtitle">Let's get started</p>
+                </div> 
+                <button class="caja_button">Get Started</button>
+            </div>
+
+            <div class="links_footer">
+                <div class="links">
+                    <span class="letra_grande">c<span class="punto_color">.</span></span>
+                    <p>@ 2021</p>
+                </div>
+                <div class="links">
+                    <div class="links_title">Customer</div>
+                    <a href="#">Buyer</a>
+                    <a href="#">Suplier</a>
+                </div>
+                <div class="links">
+                    <div class="links_title">Company</div>
+                    <a href="#">Abouts us</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Contacts us</a>
+                </div>
+                <div class="links">
+                    <div class="links_title">Futher information</div>
+                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+                <div class="links">
+                    <div class="links_title">Follow us</div>
+                    <div class="social">
+                        <div class="link_social"><i class="fab fa-facebook-f"></i></div>
+                        <div class="link_social"><i class="fab fa-twitter"></i></div>
+                        <div class="link_social"><i class="fas fa-info"></i></div>
+                        <div class="link_social"><i class="fab fa-facebook-messenger"></i></div>
+                        <div class="link_social"><i class="fab fa-telegram-plane"></i></div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
+
+    <script>
+        // Elementos que se obtienen
+        var boton = document.querySelector(".toogle");
+        var menu = document.querySelector(".menu");
+
+        
+        // Evento 
+        boton.addEventListener('click', function(){
+            console.log(boton);
+            menu.classList.toggle('mostrar');
+        })
+    </script>
 
 </body>
 </html>
